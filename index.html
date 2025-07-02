@@ -10,19 +10,20 @@
 </head>
 <body>
   <header>
-    <div class="logo"><img src="./images/logo.svg" alt=""></div>
-    <nav>
-      <ul>
-        <li><a href="#">Features <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up hide"></i></a>
-          <ul>
-            <li><a href="#"><img src="./images/icon-todo.svg" alt="#">Todo List</a></li>
-            <li><a href="#"><img src="./images/icon-calendar.svg" alt="#">Calendar</a></li>
-            <li><a href="#"><img src="./images/icon-reminders.svg" alt="#">Reminders</a></li>
-            <li><a href="#"><img src="./images/icon-planning.svg" alt="#">Planning</a></li>
-          </ul>
+    <div class="nav-logo-group">
+      <div class="logo"><img src="./images/logo.svg" alt=""></div>
+      <nav>
+        <ul>
+          <li id="featuresWrapper" class="features"><a id="features" href="#">Features <i class="fa-solid fa-angle-down" id="arrow-down"></i><i class="fa-solid fa-angle-up hide" id="arrow-up"></i></a>
+            <ul id="features-dropdown" class="features-dropdown">
+              <li><a href="#"><img src="./images/icon-todo.svg" alt="#"><span>Todo List</span></a></li>
+              <li><a href="#"><img src="./images/icon-calendar.svg" alt="#"><span>Calendar</span></a></li>
+              <li><a href="#"><img src="./images/icon-reminders.svg" alt="#"><span>Reminders</span></a></li>
+              <li><a href="#"><img src="./images/icon-planning.svg" alt="#"><span>Planning</span></a></li>
+            </ul>
         </li>
-        <li><a href="#">Company <i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up hide"></i></a>
-          <ul>
+        <li id="company"><a href="#">Company <i class="fa-solid fa-angle-down" id="arrow-down"></i><i class="fa-solid fa-angle-up hide" id="arrow-up"></i></a>
+          <ul id="company-dropdown" class="company-dropdown">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -32,22 +33,19 @@
         <li><a href="#">About</a></li>
       </ul>
     </nav>
+    </div>
+
     <div class="registration-button-section">
       <button type="button">Login</button>
       <button type="button">Register</button>
     </div>
   </header>
 
-
-
-
-
-
-<main>
-  <!-- <div class="landing-page">
+  <main>
+  <div class="landing-page">
     <div class="page-details">
       <p>Make remote work</p>
-      <p>  Get your team in sync, no matter your location. Streamline processes, 
+      <p>Get your team in sync, no matter your location. Streamline processes, 
       create team rituals, and watch productivity soar.</p>
       <button><a href="#">Learn more</a></button>
       <div class="logos-section">
@@ -64,25 +62,12 @@
         <img src="./images/image-hero-desktop.png" alt="Landing page image">
       </picture>
     </div>
-  </div> -->
-</main>
-  
-  
-  
-  
-
-  
-  
-
-  
-
-
-
-  
-  
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Taiwo Temitope Sharon</a>.
   </div>
+</main>
 </body>
+<script src="./intro.js"></script>
 </html>
